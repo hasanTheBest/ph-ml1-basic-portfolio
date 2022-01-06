@@ -23,31 +23,40 @@ h3 {
   letter-spacing: 0.1rem;
 }
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 900;
   margin-bottom: 2rem;
   letter-spacing: 0.2rem;
 }
 h2 {
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   margin-bottom: 1.7rem;
 }
 h3 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   margin-bottom: 1.4rem;
 }
 h4 {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   margin-bottom: 1.1rem;
   letter-spacing: 1px;
 }
 p,
 a {
-  font-size: 1.2rem;
   line-height: 1.6;
 }
 a {
+  font-size: 1.2rem;
   text-decoration: none;
+}
+
+a:link,
+a:hover {
+  cursor: pointer;
+}
+address {
+  font-style: normal;
+  line-height: 2;
 }
 img {
   max-width: 100%;
@@ -55,20 +64,20 @@ img {
 input:not(input[type="submit"]),
 textarea {
   font-family: "Merriweather", serif;
-  padding: 1.5rem;
+  padding: 1.2rem;
   border: 0.2rem solid darkslateblue;
   border-radius: 0.5rem;
   margin-bottom: 1rem;
   font-size: 1.1rem;
+  color: darkslateblue;
 }
 
 label {
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  /* background-color: rgba(0, 0, 255, 0.2); */
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
   background-color: darkslateblue;
   color: rgba(255, 255, 255, 0.8);
-  border-radius: 0.3rem 0rem 0 0.3rem;
+  border-radius: 0.3rem;
   align-self: flex-start;
   margin-bottom: -1rem;
   position: relative;
@@ -176,15 +185,28 @@ section {
 .contact-area {
   display: flex;
 }
-.contact-metainfo {
-  flex-basis: 30%;
+.contact-info {
+  flex-basis: 25%;
   flex-grow: 1;
-  max-width: 40%;
-  padding: 2rem;
-  padding-left: 0;
+  max-width: 35%;
+  padding-right: 2rem;
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form {
+  flex-grow: 1;
 }
 .form-row {
   display: flex;
+  flex-grow: 1;
+}
+.form-row div:not(:last-child) {
+  flex-grow: 1;
+  margin-right: 2rem;
 }
 .form-group {
   display: flex;
@@ -195,10 +217,21 @@ textarea {
   width: 100%;
 }
 
+input[type="submit"] {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
 /* Footer */
 footer {
   background-color: rgba(0, 0, 0, 0.8);
   color: rgba(255, 255, 255, 0.8);
   text-align: center;
-  padding: 2rem;
+  padding: 1.5rem;
+}
+
+footer h4 {
+  line-height: 1;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }
