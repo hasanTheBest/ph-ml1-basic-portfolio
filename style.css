@@ -111,14 +111,15 @@ section {
 .section-banner {
   display: flex;
 }
-.banner-title {
-  border-left: 0.7rem solid darkslateblue;
-  padding-left: 2rem;
-}
 .banner-content {
   flex-basis: 40%;
   flex-grow: 1;
 }
+.banner-title {
+  border-left: 0.7rem solid darkslateblue;
+  padding-left: 2rem;
+}
+
 .banner-content p {
   margin-bottom: 1.5rem;
   margin-right: 2rem;
