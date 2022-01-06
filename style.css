@@ -1,0 +1,104 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* General */
+html {
+  font-size: 14px;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-family: "Merriweather", serif;
+}
+h2,
+h3 {
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  letter-spacing: 0.2rem;
+}
+h2 {
+  font-size: 3.5rem;
+  margin-bottom: 1.7rem;
+}
+h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1.4rem;
+}
+h4 {
+  font-size: 1.7rem;
+  margin-bottom: 1.1rem;
+  letter-spacing: 1px;
+}
+p,
+a {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+main {
+  max-width: 1130px;
+  margin: 0 auto;
+}
+
+section {
+  margin: 2rem 0;
+  padding: 2rem;
+}
+
+.color-darkblue {
+  color: darkslateblue;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1.2rem 1.8rem;
+  background-color: darkslateblue;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 700;
+  border-radius: 0.5rem;
+  letter-spacing: 1px;
+}
+
+/* ===== 1.Banner Section ===== */
+.section-banner {
+  display: flex;
+}
+.banner-title {
+  border-left: 1rem solid darkslateblue;
+  padding-left: 2rem;
+}
+.banner-content {
+  flex-basis: 40%;
+  flex-grow: 1;
+}
+.banner-content p {
+  margin-bottom: 1.5rem;
+}
+.banner-image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.banner-image-wrapper > div {
+  background: linear-gradient(45deg, cyan, darkslateblue);
+  width: 80%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 50%;
+}
