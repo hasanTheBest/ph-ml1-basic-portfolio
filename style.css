@@ -1,11 +1,11 @@
-/* Reset */
+/* ========== Reset ========== */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* General */
+/* ========== General ========== */
 html {
   font-size: 14px;
 }
@@ -90,7 +90,7 @@ main {
 
 section {
   margin: 2rem 0;
-  padding: 2rem;
+  padding: 3rem 2rem;
 }
 
 .color-darkblue {
@@ -112,7 +112,7 @@ section {
   display: flex;
 }
 .banner-title {
-  border-left: 1rem solid darkslateblue;
+  border-left: 0.7rem solid darkslateblue;
   padding-left: 2rem;
 }
 .banner-content {
@@ -136,6 +136,10 @@ section {
 }
 
 /* ====== 2.Skill Section ======  */
+.section-skill > h2 {
+  margin-bottom: 3.5rem;
+  text-align: center;
+}
 .skill-item-container {
   display: flex;
 }
@@ -150,15 +154,17 @@ section {
 
 .skill-item-container > div:first-child {
   margin-left: 0;
+  background-color: rgba(72, 140, 61, 0.3);
 }
 .skill-item-container > div:last-child {
   margin-right: 0;
+  background-color: rgba(139, 61, 72, 0.3);
 }
 
 /* ====== 3.Services Sections ====== */
 .service-item {
   display: flex;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .service-image {
@@ -225,7 +231,7 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-/* Footer */
+/* ========== Footer ========== */
 footer {
   background-color: rgba(0, 0, 0, 0.8);
   color: rgba(255, 255, 255, 0.8);
