@@ -103,7 +103,7 @@ section {
   border-radius: 50%;
 }
 
-/* 2.Skill Section  */
+/* ====== 2.Skill Section ======  */
 .skill-item-container {
   display: flex;
 }
@@ -119,4 +119,33 @@ section {
 }
 .skill-item-container > div:last-child {
   margin-right: 0;
+}
+
+/* ====== 3.Services Sections ====== */
+.service-item {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.service-image {
+  max-width: 40%;
+}
+
+.service-content {
+  flex-basis: 50%;
+  flex-grow: 1;
+  align-self: center;
+  padding: 3rem;
+}
+
+.service-content > p {
+  margin-bottom: 2rem;
+}
+
+.service-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.service-item:nth-child(even) .service-content {
+  padding-left: 0;
 }
