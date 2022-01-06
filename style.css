@@ -52,6 +52,28 @@ a {
 img {
   max-width: 100%;
 }
+input:not(input[type="submit"]),
+textarea {
+  font-family: "Merriweather", serif;
+  padding: 1.5rem;
+  border: 0.2rem solid darkslateblue;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+label {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  /* background-color: rgba(0, 0, 255, 0.2); */
+  background-color: darkslateblue;
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.3rem 0rem 0 0.3rem;
+  align-self: flex-start;
+  margin-bottom: -1rem;
+  position: relative;
+  z-index: 3;
+}
 main {
   max-width: 1130px;
   margin: 0 auto;
@@ -148,4 +170,35 @@ section {
 
 .service-item:nth-child(even) .service-content {
   padding-left: 0;
+}
+
+/* ========== 4.Contact Section ========= */
+.contact-area {
+  display: flex;
+}
+.contact-metainfo {
+  flex-basis: 30%;
+  flex-grow: 1;
+  max-width: 40%;
+  padding: 2rem;
+  padding-left: 0;
+}
+.form-row {
+  display: flex;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+.form-group input[name="subject"],
+textarea {
+  width: 100%;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 2rem;
 }
